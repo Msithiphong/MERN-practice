@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const UserForm = () => {
+const UserForm = ({ userAdded }) => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
 
@@ -15,6 +15,7 @@ const UserForm = () => {
             console.log(response.data);
             setName('');
             setEmail('');
+            userAdded();
         } catch (error) {
             console.error(error);
         }
