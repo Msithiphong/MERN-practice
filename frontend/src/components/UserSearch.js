@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const UserSearch = () => {
     const [inputEmail, setInputEmail] = useState('');
-    const[userEmail, setUserEmail] = useState(null);
+    const [userEmail, setUserEmail] = useState(null);
 
     const fetchUser = async () => {
         try {

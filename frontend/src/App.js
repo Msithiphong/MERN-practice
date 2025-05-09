@@ -20,12 +20,12 @@ function App() {
   };
 
 
-  return(
+  return (
     <div className="App">
       <h1>Add User</h1>
-      <UserForm userAdded={fetchUsers}/>
+      <UserForm userAdded={fetchUsers} />
       <UserSearch />
-      
+
       <button onClick={fetchUsers}>Display All Users</button>
       {showUsers && <UserList users={users} onUpdate={fetchUsers} />}
     </div>

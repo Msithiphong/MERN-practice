@@ -21,9 +21,9 @@ const UserForm = ({ userAdded }) => {
         }
     };
 
-    return(
+    return (
         <form onSubmit={handleSubmit}>
-            
+
             <input
                 type="text"
                 placeholder='Enter name'
@@ -31,8 +31,8 @@ const UserForm = ({ userAdded }) => {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
             />
-            
-            <input 
+
+            <input
                 type="email"
                 placeholder='Enter email'
                 id="email"
